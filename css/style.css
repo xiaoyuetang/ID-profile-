@@ -1,0 +1,26 @@
+.bb {
+    background-color: #292c33;
+    height:60px;
+}
+
+.tc {
+    color: #95969a;
+    font-size: 25px;
+}
+hr {
+    border: orangered;
+    border-width: 5px;
+    border-style: inset;
+    margin: 5px 40px;
+ }
+
+ p {
+     margin: 30px 40px;
+ }
+ h1 {
+     margin: 40px 40px;
+ }
+
+.fa {
+    color: #95969a;
+  }
