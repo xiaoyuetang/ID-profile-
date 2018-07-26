@@ -3,9 +3,11 @@
     height:60px;
 }
 
-.tc {
+.text-style {
     color: #95969a;
     font-size: 25px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 hr {
     border: orangered;
@@ -21,6 +23,11 @@ hr {
      margin: 40px 40px;
  }
 
-.fa {
+.fa-style {
     color: #95969a;
+    margin: 12px 10px;
   }
+
+.tm {
+    transform: rotate(-90deg);
+}
