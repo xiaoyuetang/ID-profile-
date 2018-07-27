@@ -4,14 +4,18 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-
 	<title>ID profile</title>
+
+	<!-- circle image with hovers -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="./circle-images-with-hovers/css/style.css">
+
 	<!-- feedback rating -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel='stylesheet' href='https://afeld.github.io/emoji-css/emoji.css'>
 	<link rel="stylesheet" href="./feedback-rating/css/style.css">
 
+	<!-- layout -->
 	<link href="./bootstrap_bag/css/bootstrap.min.css" rel="stylesheet">
 	<link href="./bootstrap_bag/css/bootstrap.grid.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -23,13 +27,13 @@
 <body>
 	<div class="container-fluid">
 		<div class="row bb">
-			<div class="col-md-9">
+			<div class="col-md-8">
 				<p class="text-style ">Label</p>
 			</div>
-			<div class="col-md-3">
-				<span><i class="fa fa-smile-o fa-2x fa-style"></i></span>
-				<span><i class="fa fa-meh-o fa-2x fa-style"></i></span>
-				<span><i class="fa fa-frown-o fa-2x fa-style"></i></span>
+			<div class="col-md-4">
+				<span><i class="fa fa-smile-o fa-2x fa-style"><span class="badge">105</span></i></span>
+				<span><i class="fa fa-meh-o fa-2x fa-style"><span class="badge">2</span></i></span>
+				<span><i class="fa fa-frown-o fa-2x fa-style"><span class="badge">1</span></i></span>
 			</div>
 		</div>
 		<div class="row">
@@ -38,37 +42,40 @@
 					<b>NAME OF ID</b>
 				</h1>
 				<p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</small></p>
-				<hr width="200px" align="left"/>
+				<hr width="200px" align="center"/>
 				<p>
 					Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em>
 				</p>
-				<form class="rating-wrapper">
-					<label class="rating-label">How helpful was this?
-						<div class="ratingItemList">
-						<input class="rating rating-1" id="rating-1-2" type="radio" value="1" name="rating"/>
-						<label class="rating rating-1" for="rating-1-2"><i class="em em-angry"></i></label>
-						<input class="rating rating-2" id="rating-2-2" type="radio" value="2" name="rating"/>
-						<label class="rating rating-2" for="rating-2-2"><i class="em em-disappointed"></i></label>
-						<input class="rating rating-3" id="rating-3-2" type="radio" value="3" name="rating"/>
-						<label class="rating rating-3" for="rating-3-2"><i class="em em-expressionless"></i></label>
-						<input class="rating rating-4" id="rating-4-2" type="radio" value="4" name="rating"/>
-						<label class="rating rating-4" for="rating-4-2"><i class="em em-grinning"></i></label>
-						<input class="rating rating-5" id="rating-5-2" type="radio" value="5" name="rating"/>
-						<label class="rating rating-5" for="rating-5-2"><i class="em em-heart_eyes"></i></label>
-						</div>
-					</label>
-					<div class="feedback">
-						<textarea placeholder="What can we do to improve?"></textarea>
-						<input type="text" placeholder="Email"/>
-						<button class="submit">Send Your Feedback</button>
-					</div>
-				</form>
-				<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-				<script  src="./feedback-rating/js/index.js"></script>
 			</div>
 			<div class="col-md-6">
-				<img width="110%" src="./image/profile_picture.jpg">
+				<ul align="center" style="padding-top:100px">
+					<li>
+					  <img src="./image/profile_picture.jpg"/>
+					  <span>LALA</span>
+					</li>
+				</ul>
 			</div>
+		</div>
+		<div class="row">
+			<form class="rating-wrapper">
+				<label class="rating-label">Give LALA an emoji!
+					<div class="ratingItemList">					
+					<input class="rating rating-4" id="rating-4-2" type="radio" value="4" name="rating"/>
+					<label class="rating rating-4" for="rating-4-2"><i class="em em-grinning"></i></label>
+					<input class="rating rating-3" id="rating-3-2" type="radio" value="3" name="rating"/>
+					<label class="rating rating-3" for="rating-3-2"><i class="em em-expressionless"></i></label>
+					<input class="rating rating-2" id="rating-2-2" type="radio" value="2" name="rating"/>
+					<label class="rating rating-2" for="rating-2-2"><i class="em em-disappointed"></i></label>
+					</div>
+				</label>
+				<div class="feedback">
+					<textarea placeholder="What do you think of LALA?"></textarea>
+					<input type="text" placeholder="Email"/>
+					<button class="submit">Send Your Feedback</button>
+				</div>
+			</form>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+			<script  src="./feedback-rating/js/index.js"></script>
 		</div>
 		<div class="row">
 			<div class="col-md-6">

@@ -1,0 +1,33 @@
+div > ul > li {
+  list-style: none;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 25px;
+  background-color: orangered;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+div > ul > li img {
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  width: 300px;
+  height: 300px;
+}
+div > ul > li span {
+  position: absolute;
+  top: 115px;
+  left: 90px;
+  font-size: 2.5em;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+div > ul > li:hover img {
+  opacity: 0.4;
+  cursor: pointer;
+}
+div > ul > li:hover span {
+  opacity: 1;
+}

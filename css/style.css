@@ -1,5 +1,5 @@
 .bb {
-    background-color: #292c33;
+    background-color: #222222;
     height:60px;
 }
 
@@ -31,3 +31,9 @@ hr {
 .tm {
     transform: rotate(-90deg);
 }
+
+/* .bg {
+    background-image: url("./image/Horiz-line.jpg");
+    background-position: center center;
+    background-size: cover;
+} */
